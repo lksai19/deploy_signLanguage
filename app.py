@@ -4,7 +4,7 @@ import numpy as np
 import os
 
 
-app = Flask(__name__, template_folder='frontend')  # Set the custom template folder
+app = Flask(__name__)
 
 # Load the pickled model
 model_dict = pickle.load(open('model.p', 'rb'))
